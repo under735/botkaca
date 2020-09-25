@@ -52,7 +52,7 @@ if CONFIG.BOT_PASSWORD:
 app.add_handler(
     MessageHandler(
         help_message_handler.func,
-        filters=Filters.command("help@Leech2vid_bot")
+        filters=Filters.command("help")
     )
 )
 
@@ -60,7 +60,7 @@ app.add_handler(
 app.add_handler(
     MessageHandler(
         leech_handler.func,
-        filters=Filters.command("leech@Leech2vid_bot")
+        filters=Filters.command("leech")
     )
 )
 
@@ -68,7 +68,7 @@ app.add_handler(
 app.add_handler(
     MessageHandler(
         cancel_leech_handler.func,
-        filters=Filters.command("cancel@Leech2vid_bot")
+        filters=Filters.command("cancel")
     )
 )
 
